@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPSSI</title>
+  <link rel="stylesheet" href="/site - lele/conteudo_IPSSI/style.ipssi.css">
+</head>
+
+<body>
+
+  <header class="barra">
+    <nav>
+      <a href="/site - lele/inicio/index.html">
+        <h1>IPSSI</h1>
+      </a>
+      <ul>
+        <li><a href="#ISO">ISO</a></li>
+        <li><a href="#TCP">TCP/IP</a></li>
+        <li><a href="#rede">Rede Enlace</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="introducao">
+        <p>Neste site vamos adquirir um pouco de conhecimento sobre <span>ISO x TCP/IP</span> e <span>Rede Enlace</span>.</p>
+      </div>
+    </section>
+
+    <div class="grid">
+      <h2 id="titulo1">ISO x TCP/IP</h2>
+      <section id="ISO">
+        <div class="conteudo1">
+          <img src="/site - lele/ibage/ipssi/conteudo1.svg" alt="">
+          <h3>ISO - Características Gerais</h3>
+          <p><span>ISO (Organização Internacional de Normalização)</span> é um conjunto de normas e estruturas que visa a efetividade e encorajamento do comércio de bens e serviços. No total, há 91 países participantes da ISO, em especial, os EUA, que possui como representante na ISO a <span>ANSI (Instituto Nacional Americano de Padrões)</span> e, também, o Brasil, possuindo a <span>NBR</span>. As 5 principais ISO correspondentes às normas e padrão de qualidade são: <span>ISO 9000</span>, <span>ISO 9001</span>, <span>ISO 9002</span>, <span>ISO 9003</span> e <span>ISO 9004</span>. A <span>ISO 9000</span> é a principal, servindo como base para as demais citadas, mas, ainda que seja o pilar das outras, não é a mais abrangente, este papel fica para 9001 que possui todos os 20 elementos de normas qualidades, em seguida da 9002, que possui 18 e, por fim, a 9003 contendo apenas 12.</p>
+        </div>
+      </section>
+      <section id="camadas">
+        <div class="conteudo2">
+          <img src="/site - lele/ibage/ipssi/conteudo2-removebg-preview.png" alt="">
+          <h3>Camadas de Protocolo - ISO</h3>
+          <p>A ISO, na década de 70, criou um modelo de <span>protocolo de redes</span> <span>batizado de OSI (Interconexão de Sistemas Abertos)</span>, sua funcionalidade é estabelecer regras de comunicação entre múltiplas máquinas. A OSI é composta por 7 camadas de protocolos, sendo elas:
+          </p>
+          <ul>
+            <li><span>Camada - Física:</span> Envolve as entradas e processos que os dados percorrem para alcançar seu destino. Como sugere o nome, o caminho é por meios físicos, como dispositivos, cabos de redes, etc.</li>
+            <li><span>Camada – Enlace ou Ligação:</span> Responsável pela análise dos dados enviados da primeira camada, verificando se há erros e corrigindo caso haja. Parte essencial da ISO, pois possibilita a boa execução eficiente e sem erros das camadas superiores. Possui duas subcamadas: <span>MAC</span> e <span>LLC</span>.</li>
+            <li><span>Camada – Rede:</span> Funciona como um <span>seletor</span> de mensagens, decidindo quais mensagens mais importantes a serem enviadas primeiro e definir a melhor rota possível para elas, aqui se encontra o protocolo <span>IP (Endereço da Máquina)</span>. Monitora os envios do endereço MAC para o destinatário IP, como são vários trajetos de dados feitos até o IP, o MAC está em constante alteração, enquanto que o IP se mantém sempre fixo.</li>
+            <li><span>Camada – Transporte:</span> Os “caminhões” de dados, ela garante o êxito dos dados e o recebimento dos dados da terceira camada. Os protocolos mais comuns aqui são o <span>UDP</span> e <span>TCP</span>, o primeiro sendo mais utilizado e mais rápido que o segundo devido sua garantia da entrega da mensagem.</li>
+            <li><span>Camada – Sessão:</span> Responsável por estabelecer a conexão entre os hosts, iniciando e encerrando essa conexão. Também oferece suporte para essas sessões como registro de log e tarefas de seguranças.</li>
+            <li><span>Camada – Apresentação:</span> Basicamente funciona como um “tradutor” dos dados enviados para serem utilizados na última camada, também criptografa os dados caso necessite.</li>
+            <li><span>Camada – Aplicação:</span> Camada de consumo de dados, aqui tem a interação direta entre homem e máquinas, protocolos conhecidos como o <span>HTTP</span> e o <span>FTP</span> estão presentes aqui.</li>
+
+
+        </div>
+      </section>
+      <section id="TCP">
+        <div class="conteudo3">
+          <img src="/site - lele/ibage/ipssi/conteudo3.svg" alt="">
+          <h3>TCP/IP - Características Gerais</h3>
+          <p>O conjunto de protocolos TCP/IP é de extrema importância para o funcionamento da internet como um todo. Surgiu no final da década de 60 nos EUA junto ao projeto <span>ARPANET</span>, projeto esse que envolvia a comunicação entre múltiplos computadores, ou seja, o nascimento da internet. Anos mais tarde, após o fim da guerra fria e de uma possível guerra nuclear, surge o TCP/IP em 1975, estabelecendo conexão da universidade de Stanford, EUA, com a universidade College London, na Inglaterra. Ao longo do tempo, nasceu o protocolo HTTP e estabeleceu a internet como é conhecida hoje em dia.
+            O conjunto TCP/IP é dividido em camadas para melhor gerenciamento e segurança de dados, garantindo que a transmissão de dados seja padronizada e independente dos dispositivos usados nos processos, não a tornando dependente de linguagem de programação, sistema operacional ou arquitetura. A primeira camada é a de <span>aplicação</span>, envolve a seleção dos protocolos que serão usados pela TCP/IP para iniciar a transmissão de dados, utilizando de <span>HTTP</span> e <span>HTTPS</span> a partir de <span>URL</span>, por exemplo. Já na segunda camada se encontra o transporte dos dados, fazendo uso de <span>portas TCP</span> para inicializar a transferência, essas portas são usadas em conjuntos com o IP. A terceira camada envolve o <span>IP</span> que, basicamente, envia um sinal afirmativo para realizar o envio do pacote de dados, lidando com as interfaces dos hosts e transformando os dados em datagramas. E por fim, temos a camada de interface, que lida diretamente com a transferência de dados em si entre os hosts.
+          </p>
+        </div>
+      </section>
+    
+
+      <h2 id="titulorede">Rede Enlace</h2>
+      <section id="rede">
+        <div class="conteudo4">
+          <img src="/site - lele/ibage/ipssi/rede_enlace.svg" alt="">
+          <p>A <span>rede de enlace</span> (ou ligação) é responsável pela análise de qualidade e controle de fluxo dos dados enviados da camada física. Aqui se encontra tecnologias como as <span>VLans</span> e <span>Token ring</span>, além disso. Dispositivos switches funcionam aqui. A rede se divide em duas subcamadas: <span>camada MAC</span> e <span>camada LLC</span>.</p>
+          <ul>
+            <li><span>MAC</span>: Camada responsável pela conexão de vários computadores em uma rede. Toda máquina possui um endereço físico por rede, no caso, o <span>endereço MAC</span>, é a partir desse endereço que a camada utiliza para enviar os dados corretamente.</li>
+            <li><span>LLC</span>: Responsável pelo controle de fluxo dos dados, garante que múltiplos dados convivam dentro de uma rede.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
+</body>
+
+</html>

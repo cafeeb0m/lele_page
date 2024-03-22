@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PWI</title>
+  <link rel="stylesheet" href="/site - lele/conteudo_PWI/style_pwi.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="titulo">
+        <a href="/site - lele/inicio/index.html">
+          <h1>PWI</h1>
+        </a>
+        <img src="/site - lele/ibage/inicio/enoispha.jpeg" alt="">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="introducao">
+        <img src="/site - lele/ibage/pwi/img1.svg" alt="hrhe">
+        <div class="textos">
+          <h2>Bem vindo ao site de PW - (Pedro Wagner)</h2>
+          <p>Neste site você verá conteúdos sobre <span>API x Web Service</span>, <span>AJAX</span> e <span>API</span></p>
+          <div class="btncont">
+            <a href="#apiXweb">API x Web Service</a>
+            <a href="#web">Web Service</a>
+            <a href="#api">API</a>
+            <a href="#ajax">AJAX</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h2 id="tituloapi">API</h2>
+    <section id="api">
+      <div class="part1">
+        <h3>Qual o conceito de API</h3>
+        <p>Basicamente a <span>API</span> permite uma comunicação de troca de informação entre sistemas (integração), onde um disponibiliza informações e serviços que podem ser utilizados pelo outro, sem a necessidade de aprofundamentos de cada software.</p>
+        <h3>Qual a Importância da API</h3>
+        <p>A API abre caminho para uma série de funcionalidades aos usuários, ou seja, é de extrema importância obtê-la para seu projeto. Quando se a produz, você está sujeito a permitir que outros sistemas se integrem ao sistema. Isso não significa ser um ponto negativo, pois possibilita a oferta de seus produtos nas interfaces de seu interesse.</p>
+        <h3>Exemplos de Aplicações com API</h3>
+        <p id="subtitulo">Pagamentos:</p>
+        <p>Como exemplos de sistemas que oferecem APIs para <span>pagamentos</span>, temos:</p>
+        <ul>
+          <li>PagSeguro</li>
+          <li>Paypal</li>
+          <li>Iugu</li>
+          <li>Gerencianet</li>
+          <li>Cielo</li>
+        </ul>
+        <p>Todos eles vão oferecer uma infinidade de formas de pagamentos para sua aplicação.</p>
+        <p id="subtitulo">Redes Sociais:</p>
+        <p>Uma vasta quantidade de redes sociais também oferecem exemplos de APIs que podemos utilizar para enriquecer a experiência dos usuários em nossas aplicações. Algumas deles são:</p>
+        <ul>
+          <li>FaceBook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>WhatsApp</li>
+        </ul>
+        <p>Essas APIs oferecem funcionalidades diversas, como:</p>
+        <ul>
+          <li>obter informações úteis sobre o usuário;</li>
+          <li id="lipart1">criar opção de login utilizando o perfil da rede social, entre outras.</li>
+        </ul>
+      </div>
+    </section>
+
+    <h2 id="tituloWeb">Web Service</h2>
+    <section id="web">
+      <div class="part2">
+        <h3>Qual o conceito de Web Service</h3>
+        <p><span>Web Service</span> é uma solução utilizada na integração de sistemas e na comunicação entre aplicações diferentes. Com esta tecnologia é possível que novas aplicações possam interagir com aquelas que já existem e que sistemas desenvolvidos em plataformas diferentes sejam compatíveis. Os Web Services são componentes que permitem às aplicações enviar e receber dados. Cada aplicação pode ter a sua própria linguagem, que é traduzida para uma linguagem universal, um formato intermediário como <span>XML</span>, <span>JSON</span>, <span>CSV</span>, etc.</p>
+
+        <h3>Protocolo na Web</h3>
+        <p>Na rede, um protocolo é um conjunto padronizado de regras para formatação e processamento de dados. Os protocolos permitem que os computadores se comuniquem uns com os outros. Sua função principal é processar os dados transmitidos pela rede, dividindo-os em pequenos pacotes. Cada pacote contém informações de endereço de origem e destino. Além disso, os protocolos desempenham um papel crucial na organização das fases de estabelecimento, controle, tráfego e encerramento.</p>
+
+        <h3>Quais são os principais protocolos da Web</h3>
+        <ul>
+          <li>Protocolo <span>TCP/IP</span></li>
+          <li>Protocolo <span>HTTP</span></li>
+          <li>Protocolo <span>HTTPS</span></li>
+          <li>Protocolo <span>FTP</span></li>
+          <li>Protocolo <span>SFTP</span></li>
+          <li>Protocolo <span>SSH</span></li>
+          <li>Protocolo <span>DHCP</span></li>
+          <li>Protocolo <span>SMTP</span></li>
+        </ul>
+
+        <div class="soap">
+          <h3>Protocolo Simple Object Access Protocol (SOAP)</h3>
+          <p>O <span>SOAP</span> é um protocolo de aplicação geralmente usado em Web services, que é baseado em <span>XML</span> para a implementação de serviços da Web. Seus serviços são transportados principalmente por meio de sistemas de mensagens como o <span>HTTP</span>, visto no tópico anterior.</p>
+          <p>Essas mensagens possuem os seguintes elementos:</p>
+          <ul id="tablesoap">
+            <li><span>Envelope</span>: o envelope SOAP é o elemento raiz de uma mensagem SOAP e é obrigatório. Em essência, o envelope contém a mensagem SOAP, assim como um envelope tradicional contém uma carta escrita.</li>
+            <li><span>Cabeçalho</span>: o cabeçalho SOAP é opcional e, quando presente, contém informações específicas da aplicação, como autenticação, endereçamento e detalhes de roteamento.</li>
+            <li><span>Corpo</span>: o corpo SOAP é necessário e contém a mensagem real da aplicação que está sendo transportada, incluindo a operação remota específica que está sendo invocada, bem como os dados (parâmetros) que estão sendo transmitidos.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <h2 id="tituloWebxA">Web Service X API</h2>
+    <section id="apiXweb">
+      <div class="part3">
+        <p id="paragrafo1">Uma <span>API facilita</span> a <span>interface direta</span> com um aplicativo enquanto que um <span>Web Service</span> é uma <span>aplicação</span>.</p>
+        <p>Podemos dizer que todos os Web Services são API, mas nem todas as API são Web Service. Web Services podem não executar todas as tarefas que uma API normalmente realiza (ou pode realizar). Um serviço Web utiliza apenas alguns estilos de comunicação como o SOAP, enquanto que a API pode usar qualquer estilo de comunicação. </p>
+        <p>As <span>APIs</span> são altamente indicadas para dispositivos móveis, pois em um desktop ou serviço, o processamento ocorre de forma limitada. Com isso podemos afirmar que seu desempenho é melhor em uma interação de software para software.</p>
+        <p>Já o <span>Web Service</span> é ideal para projetos em que a comunicação é feita entre duas máquinas. </p>
+        <div class="vantagens">
+          <p>Vantagens da API</p>
+          <ul>
+            <li>ajudam a otimizar um leque amplo de operações;</li>
+            <li>podem acessar os componentes da plataforma, o que colabora para serviços mais flexíveis;</li>
+            <li>utilizam os comandos DELETE, POST, PUT, HTTP GET;</li>
+            <li>são mais customizáveis.</li>
+          </ul>
+
+          <p>Desvantagens da API:</p>
+          <ul>
+            <li>exige um investimento maior de tempo e dinheiro;</li>
+            <li>requer familiaridade com linguagem de programação.</li>
+          </ul>
+
+          <p>Vantagens do Web Service:
+          </p>
+          <ul>
+            <li>soluciona problemas de comunicação para modelos HTTP, XML, UDDI e WSDL para que duas plataformas interajam;
+            </li>
+            <li>simplifica a troca de informações entre aplicativos diferentes;</li>
+            <li>atua como uma página web quando se trata de recebimento de dados;</li>
+            <li>tem custo menor que o de API.</li>
+          </ul>
+
+          <p>Desvantagens do Wev Service</p>
+          <ul id="ulfinal">
+            <li>não é compatível com XML e AJAX;</li>
+            <li>necessita de máquinas especializadas para o desenvolvimento de serviços;</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+
+
+<script scr="/site - lele/conteudo_PWI/js/pwi.js"></script>
+
+</html>
